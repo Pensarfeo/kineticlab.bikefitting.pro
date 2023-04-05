@@ -1,0 +1,81 @@
+:root {
+  --color-background-main: #000a10;
+  --color-background-secondary: #183a4e;
+  --color-background-tertiary: #101b28;
+  --color-background-third: #fff;
+  --color-background-area: #344e64;
+  --color-background-area-opacity-50: rgba(16, 43, 60, 0.5);
+  --color-background-area-opacity-75: rgba(16, 43, 60, 0.75);
+  --color-secondary: #374c5e;
+  --color-secondary-hover: #2c4b66;
+  --color-secondary-active: #2a333a;
+  --color-secondary-inactive: #848484;
+  --color-primary: #e65100;
+  --color-primary-hover: #ff5a00;
+  --color-primary-active: #7e2d00;
+  --color-primary-inactive: #7e2d00;
+  --color-text: #FFFFFF;
+  --color-text-contrast: #38fcd4;
+  --color-accent-0: #67375dff;
+  --color-accent-1: #913ccdff;
+  --color-accent-2: #f39300ff;
+  --color-accent-3: #ef4868ff;
+  --color-accent-4: #11718aff;
+  --color-text-disabled: #848484;
+  --color-text-secondary: #D6D6D6;
+  --color-success: #00B92B;
+  --color-warning: #F7D100;
+  --color-error: #FF0000;
+}
+
+
+.bg-main {
+  background: transparent linear-gradient(180deg, var(--color-background-main) 80px, var(--color-background-tertiary) 80%) 0% 0% no-repeat padding-box !important;
+}
+
+.bg-secondary {
+  background-color: var(--color-background-secondary) !important;
+}
+
+.bg-tertiary {
+  background-color : var(--color-background-tertiary) !important;
+}
+
+.main-video {
+  padding: 0px;
+}
+
+.btn-primary {
+  /* HERE */
+  --ar-btn-hover-color: var(--color-text-contrast);
+  --ar-btn-active-color: #fff;
+  --ar-btn-hover-bg: #5a5b75;
+  --ar-btn-active-bg: var(--color-secondary-active);
+  --ar-btn-hover-border-color: #5a5b75;
+  --ar-btn-active-border-color: var(--color-secondary-active);
+}
+
+.step-badge {
+  background-color: var(--color-text-contrast);
+}
+
+.btn-outline-primary {
+  --ar-btn-color: var(--color-text-contrast);
+  --ar-btn-border-color: var(--color-text-contrast);
+  --ar-btn-hover-color: #000;
+  --ar-btn-hover-bg: var(--color-text-contrast);
+  --ar-btn-hover-border-color: var(--color-text-contrast);
+  --ar-btn-focus-shadow-rgb: 68, 140, 116;
+  --ar-btn-active-color: #000;
+  --ar-btn-active-bg: var(--color-text-contrast);
+  --ar-btn-active-border-color: var(--color-text-contrast);
+  --ar-btn-active-shadow: unset;
+  --ar-btn-disabled-color: var(--color-text-contrast);
+  --ar-btn-disabled-bg: transparent;
+  --ar-btn-disabled-border-color: var(--color-text-contrast);
+  --ar-gradient: none;
+}
+
+.ai-check-alt{
+  color: var(--color-text-contrast) !important;
+}

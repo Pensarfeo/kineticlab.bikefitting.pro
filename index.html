@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/618810b2dd0b78049f86b173/script.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKV5FKBM5Q"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-PKV5FKBM5Q');
+    </script>
+    <meta charset="utf-8">
+    <title>KineticLab</title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="Understanding movement">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+		<meta charset="utf-8" />
+		<!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"
+      integrity="sha512-j+F4W//4Pu39at5I8HC8q2l1BNz4OF3ju39HyWeqKQagW6ww3ZF9gFcu8rzUbyTDY7gEo/vqqzGte0UPpo65QQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script>
+      addEventListener("load", (event) => {
+        var slider = tns({
+        container: '#product-slider',
+        items: 1,
+        slideBy: 'page',
+        autoplay: true
+      });
+
+      });
+    </script> -->
+    <!-- Theme mode-->
+    <!-- Page loading styles-->
+    <style>
+      .page-loading {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-transition: all .4s .2s ease-in-out;
+        transition: all .4s .2s ease-in-out;
+        background-color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9999;
+      }
+      .dark-mode .page-loading {
+        background-color: #121519;
+      }
+      .page-loading.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .page-loading-inner {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-transition: opacity .2s ease-in-out;
+        transition: opacity .2s ease-in-out;
+        opacity: 0;
+      }
+      .page-loading.active > .page-loading-inner {
+        opacity: 1;
+      }
+      .page-loading-inner > span {
+        display: block;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        font-weight: normal;
+        color: #6f788b;
+      }
+      .dark-mode .page-loading-inner > span {
+        color: #fff;
+        opacity: .6;
+      }
+      .page-spinner {
+        display: inline-block;
+        width: 2.75rem;
+        height: 2.75rem;
+        margin-bottom: .75rem;
+        vertical-align: text-bottom;
+        background-color: #d7dde2; 
+        border-radius: 50%;
+        opacity: 0;
+        -webkit-animation: spinner .75s linear infinite;
+        animation: spinner .75s linear infinite;
+      }
+      .dark-mode .page-spinner {
+        background-color: rgba(255,255,255,.25);
+      }
+      @-webkit-keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes spinner {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        }
+        50% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      
+    </style>
+    <!-- Page loading scripts-->
+    <script>
+      (function () {
+        window.onload = function () {
+          const preloader = document.querySelector('.page-loading');
+          preloader.classList.remove('active');
+          setTimeout(function () {
+            preloader.remove();
+          }, 1500);
+        };
+      })();
+      
+    </script>
+    <!-- Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" id="google-font">
+    <!-- Vendor styles-->
+    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css"/>
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="assets/css/theme.css">
+    <link rel="stylesheet" media="screen" href="assets/css/kineticLab.css">
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page loading spinner-->
+    <div class="page-loading active">
+      <div class="page-loading-inner">
+        <div class="page-spinner">
+
+        </div>
+        <span>Loading...</span>
+      </div>
+    </div>
+    <!-- Page wrapper-->
+    <main class="page-wrapper">
+      <div class="dark-mode">
+        <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page-->
+        <header class="navbar navbar-expand-lg fixed-top">
+          <div class="container">
+            <span class="text-primary flex-shrink-0 me-2">
+              <img src="assets/logo_white_full.svg">
+            </span>
+          </div>
+        </header>
+      </div>
+      <!-- Page content-->
+      <!-- Hero-->
+      <section class="bg-main dark-mode d-flex position-relative overflow-hidden py-5 ">
+        <div class="container d-flex flex-column justify-content-center position-relative zindex-2 pt-sm-3 pt-md-4 pt-xl-5 pb-1 pb-sm-3 pb-lg-4 pb-xl-5">
+          <div class="row flex-lg-nowrap align-items-center pb-5 pt-2 pt-lg-4 pt-xl-0 mt-lg-4 mt-xl-0" style="gap: 26px">
+            <div class="col-lg-7 order-lg-2 main-video" style="box-sizing: content-box; flex-shrink: 1;">
+              <iframe
+                width="315px"
+                height="515px"
+                style="padding: 32px;"
+                src="https://www.youtube-nocookie.com/embed/yX0eTpSt2wY"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="col-lg-5 order-lg-1 text-center text-lg-start me-xl-5">
+              <span class="badge bg-faded-warning text-warning fs-sm">Bring your fitting to the next level&nbsp; 🚀</span>
+              <h1 class="display-5 py-3 my-2 mb-xl-3">Complete, markerless bike fitting tool</h1>
+              <ul class="list-unstyled d-table text-start mx-auto mx-lg-0 mb-0">
+                <li class="d-flex pb-2 mb-1">
+                  <i class="ai-check-alt text-primary lead me-2"></i>
+                  Super Fast Setup
+                </li>
+                <li class="d-flex pb-2 mb-1">
+                  <i class="ai-check-alt text-primary lead me-2"></i>
+                  No Equipment required
+                </li>
+                <li class="d-flex pb-2 mb-1">
+                  <i class="ai-check-alt text-primary lead me-2"></i>
+                  Gorgeous reporting &nbsp;<span style="color: #fff; opacity: 0.2;">(Coming soon)</span>
+                </li>
+
+              </ul>
+              <div class="d-flex justify-content-center justify-content-lg-start pt-4 pt-xl-5">
+                <div class="text-center">
+                  <a class="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto" href="https://www.mykineticlab.com">Want to try it?</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-main dark-mode d-flex position-relative overflow-hidden py-5">
+        <div class="container pt-2 pt-sm-4 pt-lg-5">
+          <div class="row align-items-center align-items-stretch pt-3 pt-md-0">
+            <div class="col-l-6 col-md-6">
+  
+                <div  class="position-relative zindex-2 pb-4 pb-sm-5" style="padding: 20px;  width: 100%; height: 100%; margin: auto;">
+                  <div class="tab-pane active show style-list-images" id="cowboy" role="tabpanel" style="height: 100%; border-radius: 32px; overflow:hidden; z-index: 1000;">
+                    <img class="d-block mx-auto" src="assets/bikeFitting.png" width="100%" alt="Cowboy Style" style="height: 100%; object-fit: cover;">
+                  </div>
+                  <!-- <div class="tab-pane active show style-list-images" id="cowboy" role="tabpanel" style="background-color: red; position:absolute; top:32px; left:-32px;  height: 100%; width: 100%; border-radius: 32px; overflow:hidden"></div> -->
+
+                </div>
+                  
+            </div>
+
+            <div class="col-l-6 col-md-6"  >
+              <h2 class="mb-3 text-center text-md-start">Why kineticLab</h2>
+              <p class="text-center text-md-start" style="color: white">Built with science. Our AI detects measurements, and provides you with real time data to create a smooth fitting session.</p>
+              <div class="row pt-0">
+                <div class="col-4 pb-1 mb-grid-gutter pt-5"><img class="d-block mb-3" src="assets/easyAnyDevice.svg" alt="Easy to edit" width="29">
+                  <h3 class="h6" style="color: var(--color-text-contrast)">Easy to use</h3>
+                  <p class="fs-sm mb-0" style="color: white">Get set up and ready in 30 seconds, no markers required.</p>
+                </div>
+                <div class="col-4 pb-1 mb-grid-gutter pt-5"><img class="d-block mb-3" src="assets/wow.svg" alt="Control schedule" width="26">
+                  <h3 class="h6" style="color: var(--color-text-contrast)">Wow your customer</h3>
+                  <p class="fs-sm mb-0" style="color: white">Give an unique user experience that makes your customer feel like pros.</p>
+                </div>
+
+                <div class="col-4 pb-1 mb-grid-gutter pt-5"><img class="d-block mb-3" src="assets/yourBranding.svg" alt="Control schedule" width="26">
+                  <h3 class="h6" style="color: var(--color-text-contrast)">Affordable</h3>
+                  <p class="fs-sm mb-0" style="color: white">Because we want to help every bikefitter access the latest tech.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-secondary bg-size-cover py-5 py-md-6" style="background-image: url(img/demo/business-consulting/cta-bg.png);">
+        <div class="container py-3 py-md-0">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6 text-center text-md-start">
+              <h2 class="mb-4 pb-3 pb-md-0 mb-md-0" style='color: white; text-align: center'>Want a free trial?</h2>
+            </div>
+            <div class="col-lg-6 col-md-6 d-flex justify-content-center">
+              <a class="btn btn-lg btn-primary rounded-pill w-100 w-sm-auto" href="mailto:pedro.favuzzi@mykineticlab.com?subject=Free trial">Get Now!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits-->
+      
+      <!-- Resources (Carousel on screens < 992px)-->
+    </main>
+    <!-- Footer-->
+    <footer class="footer dark-mode bg-dark py-5">
+      <div class="container pt-md-2 pt-lg-3 pt-xl-4">
+        <div class="row pb-5 pt-sm-2 mb-lg-2">
+          <div class="col-md-4 col-lg-3 pb-2 pb-md-0 mb-4 mb-md-0">
+            <a class="navbar-brand py-0 mb-3 mb-md-4" href="index.html">
+              <span class="text-primary flex-shrink-0 me-2">
+                <img src="assets/logo_gray.svg" style="width: 36px">
+              </span>
+                <span class="text-light">KineticLab</span>
+              </a>
+            <p class="fs-sm pb-2 pb-md-3 mb-3">Rich out of us!</p>
+            <div class="d-flex">
+              <a class="btn btn-icon btn-sm btn-secondary btn-instagram rounded-circle me-3" href="https://www.instagram.com/my_kinetic_lab/"  target=”_blank”>
+              <i class="ai-instagram"></i>
+            </a>
+              <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle" href="https://www.linkedin.com/company/kineticlab"  target=”_blank”>
+              <i class="ai-linkedin"></i>
+            </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button-->
+    <a class="btn-scroll-top" href="#top" data-scroll>
+      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10">
+
+        </circle>
+      </svg>
+      <i class="ai-arrow-up">
+
+      </i>
+    </a>
+    
+    <!-- Vendor scripts: js libraries and plugins-->
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js">
+
+    </script>
+    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js">
+
+    </script>
+    <script src="assets/vendor/parallax-js/dist/parallax.min.js">
+
+    </script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js">
+
+    </script>
+    <script src="assets/vendor/aos/dist/aos.js">
+
+    </script>
+    <!-- Main theme script-->
+    <script src="assets/js/theme.min.js">
+
+    </script>
+    <script src="https://vjs.zencdn.net/7.20.3/video.min.js">
+
+    </script>
+  </body>
+</html>
